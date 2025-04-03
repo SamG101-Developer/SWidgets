@@ -1,0 +1,10 @@
+[project]
+name = "SWidgets"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[tools.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[options]
+packages = ["SWidgets"]
