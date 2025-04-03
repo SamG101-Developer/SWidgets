@@ -4,8 +4,8 @@ from PyQt6.QtCore import QAbstractAnimation, pyqtSlot, Qt, QSizeF, QVariantAnima
 from PyQt6.QtGui import QColor
 from PyQt6.QtWidgets import QPushButton, QWidget
 
-from Gui.SNeumorphismEffect import SNeumorphismEffect
-from SWidgets.SApplication import SApplication
+from SWidgets.Gui.SNeumorphismEffect import SNeumorphismEffect
+from SWidgets.Widgets.SApplication import SApplication
 
 
 class SPushButton(QPushButton):
