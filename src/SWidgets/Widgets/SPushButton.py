@@ -4,7 +4,7 @@ from PyQt6.QtCore import QAbstractAnimation, pyqtSlot, Qt, QSizeF, QVariantAnima
 from PyQt6.QtGui import QColor
 from PyQt6.QtWidgets import QPushButton, QWidget
 
-from SGui.SNeumorphismEffect import SNeumorphismEffect
+from Gui.SNeumorphismEffect import SNeumorphismEffect
 from SWidgets.SApplication import SApplication
 
 

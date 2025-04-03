@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication
 
-from SGui.STheme import STheme, create_theme
+from Gui.STheme import STheme, create_theme
 
 
 class SApplication(QApplication):
