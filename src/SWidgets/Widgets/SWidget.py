@@ -1,15 +1,15 @@
 from typing import Optional
 
-from PyQt6.QtWidgets import QPushButton, QWidget
+from PyQt6.QtWidgets import QWidget
 
 from SWidgets.Gui.SNeumorphismEffect import SNeumorphismEffect
 from SWidgets.Widgets.SApplication import SApplication
 
 
-class SWidget(QPushButton):
+class SWidget(QWidget):
     _apply_effect: bool
 
-    def __init__(self, parent: Optional[QWidget] = None,apply_effect: bool = False, *args, **kwargs) -> None:
+    def __init__(self, parent: Optional[QWidget] = None, apply_effect: bool = False, *args, **kwargs) -> None:
         super().__init__(parent, *args, **kwargs)
         self._apply_effect = apply_effect
         self._init_ui()
@@ -26,7 +26,6 @@ if __name__ == "__main__":
     window.setGeometry(100, 100, 300, 200)
     window.setStyleSheet(f"background-color: {SApplication.theme.bg_color.name()};")
     widget = SWidget(window, apply_effect=True)
-    widget.setText("Click Me")
     widget.setGeometry(50, 50, 200, 100)
     window.show()
     sys.exit(app.exec())
